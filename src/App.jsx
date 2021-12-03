@@ -1,17 +1,18 @@
 import './App.css';
 import NavBar from './components/NavBar';
+import 'materialize-css/dist/css/materialize.min.css';
+import ComponenteConteiner from './components/ItemListContainer';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
       
-        <h1>
-          Mobilestore
-        </h1>
         <NavBar />
       </header>
     </div>
   );
 }
+
+ComponenteConteiner()
 export default App;
