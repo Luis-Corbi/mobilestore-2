@@ -1,4 +1,4 @@
-const estados= ['js', 'React js', 'Component']
+const estados= ['item 1', 'item 2', 'item 3']
 
 
 const Item = ({valor}) => {
