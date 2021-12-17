@@ -1,8 +1,9 @@
 import React from "react";
 import "materialize-css/dist/css/materialize.min.css";
-function CartWidget() {
+
+function CartWidget2() {
     return (
-<i class="material-icons">shopping_cart</i>
+<i class="material-icons">add</i>
     )
 }
-export default CartWidget
+export default CartWidget2
