@@ -29,6 +29,6 @@ const ItemCount = ({initial, stock, onAdd}) => {
         </div>           
     )
 }
-jdsd
+
 
 export default ItemCount
