@@ -24,6 +24,6 @@ function Item(prod) {
         </div>
     )
 }
-    
+ fsjfj   
 export default Item
     
