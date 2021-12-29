@@ -1,6 +1,6 @@
 import {useState, useEffect} from 'react'
 import { useParams } from 'react-router-dom'
-import Items from "./Items"
+import getproducts from "./Items"
 import ItemList from './ItemList'
 
 
@@ -14,12 +14,12 @@ function ItemListContainer( {greeting} ) {
     
     useEffect(() => {
         if (idCate) {
-            Items
+            getproducts
             .then(resp => setProductos(resp.filter(prod => prod.categoria === idCate))) 
             .catch(err => console.log(err))
             .finally(()=>setLoading(false))            
         } else {
-            Items
+            getproducts
             .then(resp => setProductos(resp)) 
             .catch(err => console.log(err))
             .finally(()=>setLoading(false))               

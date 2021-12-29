@@ -7,6 +7,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import ItemDetailContainer from "./ItemDetailContainer";
 import ItemListContainer from "./ItemListContainer";
 import Cart from "./Cart";
+import CartContextProvider, { useCartContext } from "./cartcontext/CartContext";
 
 
 function EcomerceApp() {
@@ -21,6 +22,7 @@ function EcomerceApp() {
       <center>
         <ItemListContainer greeting='hola soy ItemListContainer que vengo de app' />
       </center>
+      <CartContextProvider>
       <BrowserRouter>
       <center>
         <Routes>
@@ -49,6 +51,7 @@ function EcomerceApp() {
                 </Routes>
       </center>
       </BrowserRouter>
+      </CartContextProvider>
   </div>
 );
 }
