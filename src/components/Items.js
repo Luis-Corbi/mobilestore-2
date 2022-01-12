@@ -15,7 +15,7 @@ useEffect(() => {
     getDocs(itemCollection).then((snapshot) => {
         setProducts(snapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() })));
     });
-}; []);
+} ,[]);
 
 
 export default itemCollection
